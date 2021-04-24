@@ -1,3 +1,11 @@
-const { webpackConfig } = require('@rails/webpacker')
+const { webpackConfig } = require("@rails/webpacker");
 
-module.exports = webpackConfig
+webpackConfig.output = {
+  ...webpackConfig.output,
+  // library: 'myLib',
+  // libraryTarget: 'umd',
+  // filename: 'myLib.js',
+  globalObject: "this",
+};
+
+module.exports = webpackConfig;
