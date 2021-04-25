@@ -44,3 +44,4 @@ gem "react_on_rails", "= 12.2"
 gem 'mini_racer', platforms: :ruby
 gem 'mini_racer', platforms: :ruby
 gem 'mini_racer', platforms: :ruby
+gem 'mini_racer', platforms: :ruby
