@@ -1,6 +1,6 @@
 # Procfile for development using HMR
 
-web: rails s -p 3010
+# web: rails s -p 3010
 
 # Note, hot and live reloading don't work with the default generator setup on
 # top of the rails/webpacker Webpack config with server rendering.
@@ -18,9 +18,13 @@ web: rails s -p 3010
 #    client bundles and a static file for the server bundle.
 
 # Run the webpack-dev-server for client and maybe server files
-webpack-dev-server: bin/webpack-dev-server
+# webpack-dev-server: bin/webpack-dev-server
 
 # Keep the JS fresh for server rendering. Remove if not server rendering.
 # Especially if you have not configured generation of a server bundle without a hash.
 # as that will conflict with the manifest created by the bin/webpack-dev-server
 # rails-server-assets: SERVER_BUNDLE_ONLY=yes bin/webpack --watch
+
+rails: bundle exec rails s -p 3010
+wp-client: bin/webpack-dev-server
+wp-server: SERVER_BUNDLE_ONLY=yes bin/webpack --watch

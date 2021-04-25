@@ -45,3 +45,4 @@ gem 'mini_racer', platforms: :ruby
 gem 'mini_racer', platforms: :ruby
 gem 'mini_racer', platforms: :ruby
 gem 'mini_racer', platforms: :ruby
+gem 'mini_racer', platforms: :ruby
